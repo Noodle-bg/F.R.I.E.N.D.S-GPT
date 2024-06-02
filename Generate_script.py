@@ -134,5 +134,8 @@ print(f"Model loaded from {model_load_path}")
 
 # Generate text
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
-generated_text = decode(model.generate(context, max_new_tokens=5000)[0].tolist())
-print(generated_text)
+generated_text = decode(model.generate(context, max_new_tokens=50000)[0].tolist())
+with open('C:/Users/bgpra/OneDrive/Documents/GitHub/Baby-GPT/Generated_script.txt','w',encoding='utf-8') as file:
+    file.write(generated_text)
+
+print("Script written into Generated_script.txt")
