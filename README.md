@@ -1,5 +1,5 @@
-F.R.I.E.N.D.S-GPT
-=================
+Building a basic transformer from scratch only using Pytorch
+=============================================================
 
 Description
 -----------
